@@ -1,5 +1,4 @@
 # AWS-EKS
-# AWS-EKS
 Amazon Elastic Kubernetes Service (Amazon EKS)
 
 # AWS EKS - Elastic Kubernetes Service - Masterclass
