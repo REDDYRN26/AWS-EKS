@@ -3,6 +3,10 @@
 ## Amazon EKS Pod Identity – High-Level Flow
 Amazon EKS Pod Identity enables pods in your cluster to securely assume IAM roles without managing static credentials or using IRSA annotations. The high-level flow is shown below:
 
+![EKS Pod Identity Components](images/04-00-PIA.png)
+
+![EKS Pod Identity Flow](images/Pod-Identity-Worklow.jpg)
+
 1. **Create IAM Role**  
    An IAM administrator creates a role that can be assumed by the new EKS service principal:  
    `pods.eks.amazonaws.com`.  
@@ -222,3 +226,6 @@ kubectl delete -f kube-manifests/
 * **With Pod Identity Association:** Pod Identity Agent maps Pod’s Service Account → IAM Role → AWS Permissions → API calls succeed  
 
 ---
+
+
+
